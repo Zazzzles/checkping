@@ -1,0 +1,2 @@
+!function(e,t){"object"==typeof exports&&"undefined"!=typeof module?module.exports=t():"function"==typeof define&&define.amd?define(t):e.checkping=t()}(this,function(){return function(e,t){var n=this,i=new RegExp("^https?://","i").test(e)?e:"https://"+e;return new Promise(function(e,o){var f=(new Date).getTime();n.request_image(i).then(function(){var n=(new Date).getTime()-f;e(n*=t||.9)}).catch(function(e){console.log("Image get issue:",e),o(e)})})}});
+//# sourceMappingURL=index.umd.js.map
