@@ -1,0 +1,22 @@
+{
+  "name": "checkping",
+  "version": "1.0.0",
+  "description": "A small pick checking utility",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "scripts": {
+    "prepublish": "npm run build",
+    "build": "microbundle --tsconfig ./tsconfig.json --jsx React.createElement"
+  },
+  "keywords": [
+    "ping"
+  ],
+  "files": [
+    "dist"
+  ],
+  "author": "Ras Brits",
+  "license": "MIT",
+  "dependencies": {
+    "microbundle": "^0.11.0"
+  }
+}
