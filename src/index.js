@@ -24,7 +24,7 @@ export default function (url, multiplier) {
     pingUrl = re.test(url) ? url : "https://" + url;
   return new Promise((resolve, reject) => {
     let start = new Date().getTime();
-    this.request_image(pingUrl)
+    request_image(pingUrl)
       .then(() => {
         let delta = new Date().getTime() - start;
         delta *= multiplier || 0.9;
